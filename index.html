@@ -8,6 +8,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +18,7 @@
             <img src="/assets/Group.png">
             <h1 class="header-title">"In the near future, I hope to become a Developer."</h1>
             <p class="para">If you do not sacrifice for the things you want, what you want become the sacrifices</p>
-            <button class="header-btn">Contact with me</button>
+            <button id="scrollToBottomButton" class="header-btn">Contact with me</button>
         </div>
         
     </header>
@@ -98,5 +100,11 @@
     <footer>
        
     </footer>
+    <script>
+        document.getElementById('scrollToBottomButton').addEventListener('click', function() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+    </script>
+    
 </body>
 </html>
